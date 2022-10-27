@@ -8,5 +8,19 @@
 @media (max-width: 320px) {
   .content {
     border: 1px solid transparent;
+    padding: 10px;
+  }
+
+  .App .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .App h1 {
+    font-size: 26px;
+  }
+
+  .App h2 {
+    font-size: 18px;
   }
 }
