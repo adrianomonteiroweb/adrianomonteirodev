@@ -22,9 +22,9 @@ function App() {
         <Content className='content'>
           <Router>
             <div className='App'>
-              <h1>OK</h1>
+              <h1>Adriano Monteiro Dev</h1>
               <button type='button' onClick={() => changeTheme()}>
-                theme
+                Light & Dark Theme
               </button>
             </div>
           </Router>
