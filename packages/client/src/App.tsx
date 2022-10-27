@@ -22,10 +22,14 @@ function App() {
         <Content className='content'>
           <Router>
             <div className='App'>
+              <div className='menu'>
+                <h2>languages</h2>
+                <button type='button' onClick={() => changeTheme()}>
+                  Light & Dark Theme
+                </button>
+              </div>
               <h1>Adriano Monteiro Dev</h1>
-              <button type='button' onClick={() => changeTheme()}>
-                Light & Dark Theme
-              </button>
+              <h2>Junior Software Developer</h2>
             </div>
           </Router>
         </Content>
