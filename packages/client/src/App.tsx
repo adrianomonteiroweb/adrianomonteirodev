@@ -7,6 +7,7 @@ import { GlobalStyles } from './styled-components/GlobalStyles';
 import { Container, Content } from './styled-components/styledComponents';
 
 import './App.css';
+import MenuComponent from './components/menu/MenuComponent';
 
 function App() {
   const [theme, setTheme] = useState('Light');
@@ -22,12 +23,7 @@ function App() {
         <Content className='content'>
           <Router>
             <div className='App'>
-              <div className='menu'>
-                <h2>languages</h2>
-                <button type='button' onClick={() => changeTheme()}>
-                  Light & Dark Theme
-                </button>
-              </div>
+              <MenuComponent changeTheme={changeTheme} />
               <h1>Adriano Monteiro Dev</h1>
               <h2>Junior Software Developer</h2>
             </div>
