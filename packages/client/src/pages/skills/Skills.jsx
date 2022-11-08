@@ -1,4 +1,6 @@
+import Card from './card-component/Card';
 import FilterSkills from './skills-components/FilterSkills';
+import skillsData from '../../data/skillsData.json';
 
 export default function Skills() {
   return (
@@ -7,12 +9,14 @@ export default function Skills() {
       <h2>Junior Software Developer</h2>
       <FilterSkills />
       <div className='cards-skills-div'>
-        <div className='card'>
-          <h3>ReactJS</h3>
-        </div>
-        <div className='card'>
-          <h3>NodeJS</h3>
-        </div>
+        {skillsData.map(({ skill, time_experience, types, at }) => (
+          <Card
+            skill={skill}
+            time_experience={time_experience}
+            types={types}
+            at={at}
+          />
+        ))}
       </div>
     </div>
   );

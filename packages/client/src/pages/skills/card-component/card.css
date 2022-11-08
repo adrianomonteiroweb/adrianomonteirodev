@@ -1,0 +1,41 @@
+.card {
+  align-items: center;
+  background-color: rgb(247, 245, 245);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5px;
+  padding: 4px;
+  width: 250px;
+}
+
+.card .tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tags .types {
+  border-radius: 4px;
+  color: aliceblue;
+  margin: 2px;
+  padding: 2px;
+}
+
+.types.Academic {
+  background-color: darkgreen;
+}
+
+.types.Professional {
+  background-color: midnightblue;
+}
+
+.tags .at {
+  background-color: dimgray;
+  border-radius: 4px;
+  color: aliceblue;
+  margin: 2px;
+  padding: 2px;
+}
