@@ -3,12 +3,12 @@
     "at": ["Trybe"],
     "skill": "React.js",
     "time_experience": 6,
-    "types": ["Academic"]
+    "type": "Academic"
   },
   {
     "at": ["Trybe", "Youfy"],
     "skill": "Node.js",
     "time_experience": 3,
-    "types": ["Academic", "Professional"]
+    "type": "Professional"
   }
 ]
