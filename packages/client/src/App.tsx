@@ -1,13 +1,17 @@
+// packages
 import { useState } from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// styled components
 import { ThemeProvider } from 'styled-components';
 import { darkTheme, lightTheme } from './styled-components/themes';
 import { GlobalStyles } from './styled-components/GlobalStyles';
 import { Container, Content } from './styled-components/styledComponents';
-
-import './App.css';
+// components
 import MenuComponent from './components/menu/MenuComponent';
+// pages
+import Skills from './pages/skills/Skills';
+// style
+import './App.css';
 
 function App() {
   const [theme, setTheme] = useState('Light');
@@ -23,9 +27,15 @@ function App() {
         <Content className='content'>
           <Router>
             <div className='App'>
-              <MenuComponent changeTheme={changeTheme} />
-              <h1>Adriano Monteiro Dev</h1>
-              <h2>Junior Software Developer</h2>
+              <Routes>
+                <Route
+                  path='/'
+                  element={[
+                    <MenuComponent changeTheme={changeTheme} />,
+                    <Skills />,
+                  ]}
+                />
+              </Routes>
             </div>
           </Router>
         </Content>
