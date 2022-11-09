@@ -22,4 +22,10 @@ export const Content = styled.div`
   .bar-div {
     background-color: ${(props) => props.theme.bar};
   }
+  .card {
+    background-color: ${(props) =>
+      props.theme.body === '#1a1a1a' ? '#1a1a1a' : '#e9ebf2'};
+    color: ${(props) =>
+      props.theme.body === '#1a1a1a' ? '#e9ebf2' : '#1a1a1a'};
+  }
 `;

@@ -1,3 +1,5 @@
+import './menuComponent.css';
+
 interface IProps {
   changeTheme: Function;
 }

@@ -1,0 +1,10 @@
+.skills-filter-div {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+
+.skills-filter-div button {
+  border: 0;
+  margin: 2px;
+}

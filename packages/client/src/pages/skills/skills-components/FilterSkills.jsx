@@ -1,3 +1,5 @@
+import './filterSkills.css';
+
 export default function FilterSkills({ setTypeSkill }) {
   return (
     <div className='skills-filter-div'>

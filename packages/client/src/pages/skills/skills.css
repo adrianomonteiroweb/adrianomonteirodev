@@ -1,4 +1,7 @@
 .skills-div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .skills-div .cards-skills-div {
