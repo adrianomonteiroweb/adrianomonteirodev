@@ -1,0 +1,8 @@
+.skills-div {
+}
+
+.skills-div .cards-skills-div {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 300px;
+}

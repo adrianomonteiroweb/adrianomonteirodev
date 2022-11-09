@@ -4,6 +4,8 @@ import Card from './card-component/Card';
 import FilterSkills from './skills-components/FilterSkills';
 import skillsData from '../../data/skillsData.json';
 
+import './skills.css';
+
 export default function Skills() {
   const [typeSkill, setTypeSkill] = useState('');
 
