@@ -3,16 +3,16 @@
   background-color: rgb(247, 245, 245);
   border-radius: 8px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   margin: 5px;
   padding: 4px;
-  width: 250px;
+  width: 180px;
 }
 
 .card .tags {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
 }
