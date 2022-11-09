@@ -1,7 +1,6 @@
 .content {
-  align-items: center;
   display: flex;
-  height: 568px;
+  min-height: 568px;
   justify-content: center;
 }
 

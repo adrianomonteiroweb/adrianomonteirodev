@@ -4,10 +4,15 @@
   border-radius: 8px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   margin: 5px;
   padding: 4px;
-  width: 180px;
+  width: 120px;
+}
+
+.card h3,
+span {
+  font-size: 14px;
 }
 
 .card .tags {
@@ -15,6 +20,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  margin-left: 2px;
 }
 
 .tags .types {
