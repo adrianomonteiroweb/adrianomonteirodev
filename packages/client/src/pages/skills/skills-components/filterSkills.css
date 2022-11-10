@@ -2,9 +2,12 @@
   display: flex;
   justify-content: center;
   margin: 5px;
+  position: relative;
+  top: -25px;
 }
 
 .skills-filter-div button {
+  background-color: transparent;
   border: 0;
   margin: 2px;
 }
