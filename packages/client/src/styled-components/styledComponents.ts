@@ -28,4 +28,10 @@ export const Content = styled.div`
     color: ${(props) =>
       props.theme.body === '#1a1a1a' ? '#e9ebf2' : '#1a1a1a'};
   }
+  button {
+    color: ${(props) =>
+      props.theme.body === '#1a1a1a' ? '#1a1a1a' : '#e9ebf2'};
+    border-bottom: 1px solid
+      ${(props) => (props.theme.body === '#1a1a1a' ? '#1a1a1a' : '#e9ebf2')};
+  }
 `;

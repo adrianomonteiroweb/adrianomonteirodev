@@ -4,6 +4,7 @@
 }
 
 .menu button {
+  background-color: transparent;
   border: 0;
   height: 30px;
 }

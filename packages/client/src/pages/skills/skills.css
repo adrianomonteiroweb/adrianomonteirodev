@@ -4,8 +4,20 @@
   text-align: center;
 }
 
+.skills-div h1 {
+  color: #1a1a1a;
+}
+
+.skills-div h2 {
+  color: #1a1a1a;
+  position: relative;
+  top: -25px;
+}
+
 .skills-div .cards-skills-div {
   display: flex;
   flex-wrap: wrap;
   max-width: 300px;
+  position: relative;
+  top: -20px;
 }
