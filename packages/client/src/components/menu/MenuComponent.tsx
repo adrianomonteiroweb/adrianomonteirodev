@@ -1,3 +1,4 @@
+import LanguagesComponent from '../languages/LanguagesComponent';
 import './menuComponent.css';
 
 interface IProps {
@@ -7,7 +8,7 @@ interface IProps {
 export default function MenuComponent({ changeTheme }: IProps) {
   return (
     <div className='menu'>
-      <h2>languages</h2>
+      <LanguagesComponent />
       <button type='button' onClick={() => changeTheme()}>
         Light & Dark Theme
       </button>
