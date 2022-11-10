@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import Card from './card-component/Card';
 import FilterSkills from './skills-components/FilterSkills';
@@ -7,12 +8,13 @@ import skillsData from '../../data/skillsData.json';
 import './skills.css';
 
 export default function Skills() {
+  const { t } = useTranslation();
   const [typeSkill, setTypeSkill] = useState('');
 
   return (
     <div className='skills-div'>
       <h1>Adriano Monteiro Dev</h1>
-      <h2>Junior Software Developer</h2>
+      <h2>{t('Junior Full Stack Software Developer')}</h2>
       <FilterSkills setTypeSkill={setTypeSkill} />
       <div className='cards-skills-div'>
         {skillsData
