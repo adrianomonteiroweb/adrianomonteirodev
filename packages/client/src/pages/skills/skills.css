@@ -17,7 +17,20 @@
 .skills-div .cards-skills-div {
   display: flex;
   flex-wrap: wrap;
-  max-width: 300px;
   position: relative;
   top: -20px;
+}
+
+@media (max-width: 320px) {
+  .skills-div h1 {
+    font-size: 22px;
+  }
+
+  .skills-div h2 {
+    font-size: 14px;
+  }
+
+  .skills-div .cards-skills-div {
+    max-width: 300px;
+  }
 }

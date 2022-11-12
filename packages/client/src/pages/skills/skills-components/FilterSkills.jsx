@@ -1,22 +1,26 @@
+import { useTranslation } from 'react-i18next';
+
 import './filterSkills.css';
 
 export default function FilterSkills({ setTypeSkill }) {
+  const { t } = useTranslation();
+
   return (
     <div className='skills-filter-div'>
       <button className='filter-button' onClick={() => setTypeSkill('')}>
-        All Skills
+        {t('All Skills')}
       </button>
       <button
         className='filter-button'
         onClick={() => setTypeSkill('Academic')}
       >
-        Professionals
+        {t('Professionals')}
       </button>
       <button
         className='filter-button'
         onClick={() => setTypeSkill('Professional')}
       >
-        Academics
+        {t('Academics')}
       </button>
     </div>
   );

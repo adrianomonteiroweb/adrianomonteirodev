@@ -34,4 +34,9 @@ export const Content = styled.div`
     border-bottom: 1px solid
       ${(props) => (props.theme.body === '#1a1a1a' ? '#1a1a1a' : '#e9ebf2')};
   }
+  h1,
+  h2 {
+    color: ${(props) =>
+      props.theme.body === '#1a1a1a' ? '#1a1a1a' : '#e9ebf2'};
+  }
 `;
