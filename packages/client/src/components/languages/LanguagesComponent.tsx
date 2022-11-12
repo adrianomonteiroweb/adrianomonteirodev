@@ -7,12 +7,15 @@ import './languagesComponent.css';
 export default function LanguagesComponent() {
   const [language, setLanguage] = useState(i18n.language);
 
-  function selectorChange(event: React.MouseEvent<HTMLButtonElement>) {
+  function changeSelectedLanguage(event: React.MouseEvent<HTMLButtonElement>) {
     document.querySelector(`#${language}`)?.classList.remove('selected');
 
     const button: HTMLButtonElement = event.currentTarget;
+
     document.querySelector(`#${button.id}`)?.classList.add('selected');
+
     i18n.changeLanguage(button.id);
+
     setLanguage(button.id);
   }
 
@@ -22,7 +25,7 @@ export default function LanguagesComponent() {
         className='language-button selected'
         id='pt-BR'
         onClick={(event) => {
-          selectorChange(event);
+          changeSelectedLanguage(event);
         }}
       >
         BR
@@ -31,7 +34,7 @@ export default function LanguagesComponent() {
         className='language-button'
         id='en-US'
         onClick={(event) => {
-          selectorChange(event);
+          changeSelectedLanguage(event);
         }}
       >
         ENG
@@ -40,7 +43,7 @@ export default function LanguagesComponent() {
         className='language-button'
         id='es-ES'
         onClick={(event) => {
-          selectorChange(event);
+          changeSelectedLanguage(event);
         }}
       >
         ESP

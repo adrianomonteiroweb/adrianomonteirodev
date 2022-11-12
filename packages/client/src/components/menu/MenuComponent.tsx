@@ -9,7 +9,11 @@ export default function MenuComponent({ changeTheme }: IProps) {
   return (
     <div className='menu'>
       <LanguagesComponent />
-      <button type='button' onClick={() => changeTheme()}>
+      <button
+        className='button-selected'
+        type='button'
+        onClick={() => changeTheme()}
+      >
         Light & Dark Theme
       </button>
     </div>
