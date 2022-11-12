@@ -2,6 +2,7 @@
   display: flex;
   min-height: 568px;
   justify-content: center;
+  text-align: center;
 }
 
 @media (max-width: 320px) {

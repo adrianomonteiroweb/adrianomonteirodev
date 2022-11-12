@@ -12,8 +12,10 @@ import MenuComponent from './components/menu/MenuComponent';
 import Skills from './pages/skills/Skills';
 // style
 import './App.css';
+import { useTranslation } from 'react-i18next';
 
 function App() {
+  const { t } = useTranslation();
   const [theme, setTheme] = useState('Light');
 
   function changeTheme() {
@@ -27,6 +29,7 @@ function App() {
         <Content className='content'>
           <Router>
             <div className='App'>
+              <h1>{t('Under Development')}</h1>
               <Routes>
                 <Route
                   path='/'

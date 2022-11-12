@@ -34,9 +34,21 @@ export const Content = styled.div`
     border-bottom: 1px solid
       ${(props) => (props.theme.body === '#1a1a1a' ? '#1a1a1a' : '#e9ebf2')};
   }
-  h1,
-  h2 {
+  .skills-div h1,
+  .skills-div h2 {
     color: ${(props) =>
       props.theme.body === '#1a1a1a' ? '#1a1a1a' : '#e9ebf2'};
+  }
+  .languages-div .language-button {
+    color: ${(props) =>
+      props.theme.body === '#1a1a1a' ? '#1a1a1a' : '#e9ebf2'};
+  }
+  .skills-filter-div button {
+    color: ${(props) =>
+      props.theme.body === '#1a1a1a' ? '#1a1a1a' : '#e9ebf2'};
+  }
+  .language-button.selected {
+    border-bottom: 1px solid
+      ${(props) => (props.theme.body === '#1a1a1a' ? '#1a1a1a' : '#e9ebf2')};
   }
 `;
