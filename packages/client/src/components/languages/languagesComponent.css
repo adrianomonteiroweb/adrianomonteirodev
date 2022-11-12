@@ -1,9 +1,14 @@
 .languages-div .language-button {
-  font-size: 10px;
   border: 0;
 }
 
 .language-button.selected {
   font-family: bold;
   border-bottom: 1px solid black;
+}
+
+@media (max-width: 320px) {
+  .languages-div .language-button {
+    font-size: 10px;
+  }
 }
