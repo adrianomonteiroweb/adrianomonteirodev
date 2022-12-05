@@ -48,6 +48,15 @@ export default function LanguagesComponent() {
       >
         ESP
       </button>
+      <button
+        className='language-button'
+        id='fr-FR'
+        onClick={(event) => {
+          changeSelectedLanguage(event);
+        }}
+      >
+        FR
+      </button>
     </div>
   );
 }
