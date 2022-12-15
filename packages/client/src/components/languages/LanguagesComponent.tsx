@@ -57,6 +57,15 @@ export default function LanguagesComponent() {
       >
         FR
       </button>
+      <button
+        className='language-button'
+        id='it-IT'
+        onClick={(event) => {
+          changeSelectedLanguage(event);
+        }}
+      >
+        IT
+      </button>
     </div>
   );
 }
