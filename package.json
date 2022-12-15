@@ -4,7 +4,8 @@
   "description": "",
   "private": true,
   "scripts": {
-    "client:start": "npm start --workspace @adrianomonteirodev/client"
+    "client:start": "npm start --workspace @adrianomonteirodev/client",
+    "server:dev": "npm run dev --workspace @adrianomonteirodev/server"
   },
   "keywords": [],
   "author": "",
