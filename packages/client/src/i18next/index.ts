@@ -5,12 +5,14 @@ import PTBR from './locales/pt-br/pt-br.json';
 import ENUS from './locales/en-us/en-us.json';
 import ESES from './locales/es-es/es-es.json';
 import FRFR from './locales/fr-fr/fr-fr.json';
+import ITIT from './locales/it-it/it-it.json';
 
 const resources = {
   'pt-BR': PTBR,
   'en-US': ENUS,
   'es-ES': ESES,
   'fr-FR': FRFR,
+  'it-IT': ITIT,
 };
 
 function InitI18N() {
