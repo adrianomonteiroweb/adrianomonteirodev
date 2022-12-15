@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "start": "node dist/server.js",
+    "start": "node public/server.js",
     "dev": "nodemon src/server.ts",
     "build": "tsc"
   },
