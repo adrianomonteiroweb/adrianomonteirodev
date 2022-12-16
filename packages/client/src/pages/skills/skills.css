@@ -1,7 +1,7 @@
 .skills-div {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  text-align: center;
 }
 
 .skills-div h1 {
@@ -18,7 +18,31 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  justify-content: center;
   top: -20px;
+}
+
+@media (max-width: 1440px) {
+  .skills-div {
+    width: 1400px;
+  }
+
+  .skills-div .cards-skills-div {
+    margin-top: 40px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .skills-div .cards-skills-div {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-div .cards-skills-div {
+    max-width: 400px;
+  }
 }
 
 @media (max-width: 320px) {

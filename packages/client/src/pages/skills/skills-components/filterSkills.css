@@ -12,6 +12,12 @@
   margin: 2px;
 }
 
+@media (max-width: 1440px) {
+  .filter-button {
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 320px) {
   .skills-filter-div bottom {
     font-size: 10px;
