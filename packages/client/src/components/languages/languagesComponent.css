@@ -7,8 +7,14 @@
   border-bottom: 1px solid black;
 }
 
+@media (max-width: 1440px) {
+  .button-selected {
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 320px) {
-  .languages-div .language-button {
+  .button-selected {
     font-size: 10px;
   }
 }
