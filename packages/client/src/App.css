@@ -19,6 +19,7 @@
   .content {
     border: 1px solid transparent;
     height: 1136px;
+    width: 100%;
     padding: 10px;
   }
 
