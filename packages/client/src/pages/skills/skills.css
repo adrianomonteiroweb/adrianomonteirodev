@@ -2,6 +2,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 }
 
 .skills-div h1 {
@@ -24,7 +25,7 @@
 
 @media (max-width: 1440px) {
   .skills-div {
-    width: 1400px;
+    width: 1000px;
   }
 
   .skills-div .cards-skills-div {
