@@ -1,15 +1,28 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+
+import axiosFunction from '../../utils/functions';
 
 import Card from './card-component/Card';
 import FilterSkills from './skills-components/FilterSkills';
-import skillsData from '../../data/skillsData.json';
 
 import './skills.css';
 
 export default function Skills() {
   const { t } = useTranslation();
   const [typeSkill, setTypeSkill] = useState('All Skills');
+  const [skillsData, setSkillsData] = useState([]);
+
+  async function fetch() {
+    const fetchResult = await axiosFunction('skills');
+
+    setSkillsData(fetchResult);
+  }
+
+  useEffect(() => {
+    fetch();
+    console.log(skillsData);
+  });
 
   return (
     <div className='skills-div'>
