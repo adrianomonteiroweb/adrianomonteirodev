@@ -10,7 +10,7 @@ import routes from './routes';
 app.use(routes);
 app.use(
   cors({
-    origin: process.env.DEPLOY_URL,
+    origin: 'https://adrianomonteirodev.vercel.app/skills',
   })
 );
 
