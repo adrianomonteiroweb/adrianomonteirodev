@@ -10,8 +10,8 @@ import routes from './routes';
 app.use(routes);
 app.use(
   cors({
-    origin: '*',
-    optionsSuccessStatus: 200,
+    origin:
+      'https://adrianomonteirodev-server-2ulhxmpt0-adrianomonteiroweb.vercel.app/',
   })
 );
 
