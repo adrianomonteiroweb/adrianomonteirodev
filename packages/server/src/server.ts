@@ -10,7 +10,8 @@ import routes from './routes';
 app.use(routes);
 app.use(
   cors({
-    origin: 'https://adrianomonteirodev.vercel.app/skills',
+    origin: '*',
+    optionsSuccessStatus: 200,
   })
 );
 
