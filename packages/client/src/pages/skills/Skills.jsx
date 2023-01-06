@@ -32,8 +32,9 @@ export default function Skills() {
       <div className='cards-skills-div'>
         {skillsData
           .filter(({ type }) => type !== typeSkill)
-          .map(({ skill, time_experience, type, at }) => (
+          .map(({ skill, time_experience, type, at }, index) => (
             <Card
+              key={index}
               skill={skill}
               time_experience={time_experience}
               type={type}
