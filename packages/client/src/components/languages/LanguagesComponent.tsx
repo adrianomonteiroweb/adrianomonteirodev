@@ -17,6 +17,7 @@ export default function LanguagesComponent() {
     i18n.changeLanguage(button.id);
 
     setLanguage(button.id);
+    localStorage.setItem('languagePrefence', button.id);
   }
 
   return (

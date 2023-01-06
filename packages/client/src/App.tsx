@@ -16,10 +16,20 @@ import { useTranslation } from 'react-i18next';
 
 function App() {
   const { t } = useTranslation();
-  const [theme, setTheme] = useState('Light');
+  const [theme, setTheme] = useState(
+    localStorage.getItem('themePreference')
+      ? localStorage.getItem('themePreference')
+      : 'Light'
+  );
 
   function changeTheme() {
-    theme === 'Light' ? setTheme('Dark') : setTheme('Light');
+    if (theme === 'Light') {
+      setTheme('Dark');
+      localStorage.setItem('themePreference', 'Dark');
+    } else {
+      setTheme('Light');
+      localStorage.setItem('themePreference', 'Light');
+    }
   }
 
   return (

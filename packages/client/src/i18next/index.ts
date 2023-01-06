@@ -15,10 +15,14 @@ const resources = {
   'it-IT': ITIT,
 };
 
+const languagePreference = localStorage
+  ? localStorage.getItem('languagePrefence')
+  : navigator.language;
+
 function InitI18N() {
   i18n.use(initReactI18next).init({
     resources,
-    lng: navigator.language,
+    lng: languagePreference || navigator.language,
     interpolation: {
       escapeValue: false,
     },
