@@ -12,6 +12,7 @@ import MenuComponent from './components/menu/MenuComponent';
 import Skills from './pages/skills/Skills';
 // style
 import './App.css';
+
 import { useTranslation } from 'react-i18next';
 
 function App() {

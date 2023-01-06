@@ -2,17 +2,6 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
-}
-
-.skills-div h1 {
-  color: #1a1a1a;
-}
-
-.skills-div h2 {
-  color: #1a1a1a;
-  position: relative;
-  top: -25px;
 }
 
 .skills-div .cards-skills-div {
@@ -20,42 +9,39 @@
   flex-wrap: wrap;
   position: relative;
   justify-content: center;
-  top: -20px;
+  top: -50px;
 }
 
-@media (max-width: 1440px) {
+.skills-div .skills-filter-div {
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
   .skills-div {
-    width: 1000px;
+    width: 80%;
   }
 
   .skills-div .cards-skills-div {
     margin-top: 40px;
     width: 90%;
   }
-}
 
-@media (max-width: 1024px) {
-  .skills-div .cards-skills-div {
-    max-width: 400px;
+  .skills-filter-div .filter-button {
+    font-size: 14px;
   }
 }
 
 @media (max-width: 768px) {
+  .skills-div {
+    width: 100%;
+  }
+
   .skills-div .cards-skills-div {
-    max-width: 400px;
-  }
-}
-
-@media (max-width: 320px) {
-  .skills-div h1 {
-    font-size: 22px;
+    margin-top: 40px;
+    width: 90%;
   }
 
-  .skills-div h2 {
+  .skills-filter-div .filter-button {
     font-size: 14px;
-  }
-
-  .skills-div .cards-skills-div {
-    max-width: 300px;
   }
 }

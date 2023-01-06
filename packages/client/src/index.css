@@ -4,20 +4,8 @@ body {
   padding: 0;
 }
 
-@media (max-width: 425px) {
-  #root {
-    width: 425px;
-  }
-}
-
-@media (max-width: 375px) {
-  #root {
-    width: 375px;
-  }
-}
-
-@media (max-width: 360px) {
-  #root {
-    width: 320px;
+@media (max-width: 768px) {
+  body {
+    width: 100%;
   }
 }
