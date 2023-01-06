@@ -16,7 +16,11 @@
   margin-top: 20px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
+  .content {
+    min-height: 600px;
+  }
+
   .skills-div {
     width: 80%;
   }
@@ -31,17 +35,8 @@
   }
 }
 
+@media (max-width: 1024px) {
+}
+
 @media (max-width: 768px) {
-  .skills-div {
-    width: 100%;
-  }
-
-  .skills-div .cards-skills-div {
-    margin-top: 40px;
-    width: 90%;
-  }
-
-  .skills-filter-div .filter-button {
-    font-size: 14px;
-  }
 }

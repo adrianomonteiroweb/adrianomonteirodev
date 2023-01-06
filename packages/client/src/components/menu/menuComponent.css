@@ -8,7 +8,7 @@
   border: 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   .menu {
     width: 90%;
   }
@@ -18,12 +18,8 @@
   }
 }
 
-@media (max-width: 768px) {
-  .menu {
-    width: 90%;
-  }
+@media (max-width: 1024px) {
+}
 
-  button img {
-    width: 60px;
-  }
+@media (max-width: 768px) {
 }
