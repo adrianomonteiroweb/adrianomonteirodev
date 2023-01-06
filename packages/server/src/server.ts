@@ -12,6 +12,7 @@ app.use(
   cors({
     origin:
       'https://adrianomonteirodev-server-2ulhxmpt0-adrianomonteiroweb.vercel.app/',
+    methods: 'GET',
   })
 );
 
