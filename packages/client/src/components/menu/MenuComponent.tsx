@@ -1,11 +1,13 @@
 import LanguagesComponent from '../languages/LanguagesComponent';
+
 import './menuComponent.css';
 
 interface IProps {
   changeTheme: Function;
+  theme: any;
 }
 
-export default function MenuComponent({ changeTheme }: IProps) {
+export default function MenuComponent({ changeTheme, theme }: IProps) {
   return (
     <div className='menu'>
       <LanguagesComponent />
@@ -14,7 +16,10 @@ export default function MenuComponent({ changeTheme }: IProps) {
         type='button'
         onClick={() => changeTheme()}
       >
-        Light & Dark Theme
+        <img
+          src={theme === 'Light' ? 'light-theme.png' : 'dark-theme.png'}
+          alt={theme === 'Light' ? 'light-theme' : 'dark-theme'}
+        />
       </button>
     </div>
   );

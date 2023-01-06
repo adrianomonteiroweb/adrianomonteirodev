@@ -1,5 +1,7 @@
 .languages-div .language-button {
   border: 0;
+  font-family: julius 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
 }
 
 .language-button.selected {

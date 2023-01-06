@@ -31,8 +31,6 @@ export const Content = styled.div`
   .button-selected {
     color: ${(props) =>
       props.theme.body === '#1a1a1a' ? '#1a1a1a' : '#e9ebf2'};
-    border-bottom: 1px solid
-      ${(props) => (props.theme.body === '#1a1a1a' ? '#1a1a1a' : '#e9ebf2')};
   }
   .skills-div h1,
   .skills-div h2 {

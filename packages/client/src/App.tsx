@@ -44,7 +44,7 @@ function App() {
                 <Route
                   path='/'
                   element={[
-                    <MenuComponent changeTheme={changeTheme} />,
+                    <MenuComponent changeTheme={changeTheme} theme={theme} />,
                     <Skills />,
                   ]}
                 />
