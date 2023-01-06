@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import axiosFunction from '../../utils/functions';
+import secondaryData from '../../data/skillsData.json';
 
 import Card from './card-component/Card';
 import FilterSkills from './skills-components/FilterSkills';
@@ -21,7 +22,8 @@ export default function Skills() {
 
   useEffect(() => {
     fetch();
-    console.log('SKILLS DATA: ', skillsData);
+
+    skillsData.length === 0 && setSkillsData(secondaryData);
   });
 
   return (
