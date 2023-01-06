@@ -6,31 +6,24 @@
 .menu button {
   background-color: transparent;
   border: 0;
-  height: 30px;
-}
-
-button img {
-  width: 80px;
-}
-
-@media (max-width: 1440px) {
-  .menu {
-    width: 90%;
-  }
-
-  .language-button {
-    font-size: 30px;
-  }
 }
 
 @media (max-width: 1024px) {
   .menu {
     width: 90%;
   }
+
+  button img {
+    width: 60px;
+  }
 }
 
 @media (max-width: 768px) {
   .menu {
     width: 90%;
+  }
+
+  button img {
+    width: 60px;
   }
 }

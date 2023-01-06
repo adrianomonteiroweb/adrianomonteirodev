@@ -15,34 +15,11 @@
   justify-content: space-between;
 }
 
-@media (max-width: 1440px) {
-  .content {
-    border: 1px solid transparent;
-    height: 1136px;
-    width: 100%;
-    padding: 10px;
-  }
-
-  .App h1 {
-    font-size: 50px;
-  }
-
-  .App h2 {
-    font-size: 40px;
-  }
-}
-
 @media (max-width: 1024px) {
   .content {
-    border: 1px solid transparent;
+    min-height: 650px;
     padding: 10px;
-  }
-}
-
-@media (max-width: 768px) {
-  .content {
-    border: 1px solid transparent;
-    padding: 10px;
+    width: 100%;
   }
 
   .App h1 {
@@ -54,10 +31,16 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   .content {
-    border: 1px solid transparent;
+    min-height: 576px;
     padding: 10px;
+    width: 100%;
+  }
+
+  .app {
+    border: 1px solid black;
+    min-width: 500px;
   }
 
   .App h1 {
