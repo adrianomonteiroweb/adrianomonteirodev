@@ -39,7 +39,7 @@ export const Content = styled.div`
   }
   .languages-div .language-button {
     color: ${(props) =>
-      props.theme.body === '#1a1a1a' ? '#CDCDCD' : '#e9ebf2'};
+      props.theme.body === '#1a1a1a' ? '#9C9B9B' : '#e9ebf2'};
   }
   .skills-filter-div button {
     color: ${(props) =>
