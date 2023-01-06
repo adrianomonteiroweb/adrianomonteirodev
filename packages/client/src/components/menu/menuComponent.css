@@ -9,6 +9,10 @@
   height: 30px;
 }
 
+button img {
+  width: 80px;
+}
+
 @media (max-width: 1440px) {
   .menu {
     width: 90%;
