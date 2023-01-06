@@ -25,6 +25,10 @@
     width: 80%;
   }
 
+  .skills-div img {
+    width: 400px;
+  }
+
   .skills-div .cards-skills-div {
     margin-top: 40px;
     width: 90%;
