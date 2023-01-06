@@ -28,7 +28,18 @@ export default function Skills() {
 
   return (
     <div className='skills-div'>
-      <h1>Adriano Monteiro Dev</h1>
+      <img
+        src={
+          localStorage.getItem('themePreference') === 'Light'
+            ? 'logo-light.png'
+            : 'logo-dark.png'
+        }
+        alt={
+          localStorage.getItem('themePreference') === 'Light'
+            ? 'logo-light'
+            : 'logo-dark'
+        }
+      />
       <h2>{t('Junior Full Stack Software Developer')}</h2>
       <FilterSkills typeSkill={typeSkill} setTypeSkill={setTypeSkill} />
       <div className='cards-skills-div'>
