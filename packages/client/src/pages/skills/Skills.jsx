@@ -21,7 +21,7 @@ export default function Skills() {
 
   useEffect(() => {
     fetch();
-    console.log(skillsData);
+    console.log('SKILLS DATA: ', skillsData);
   });
 
   return (
