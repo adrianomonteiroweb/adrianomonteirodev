@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import i18n from '../../i18next';
 
@@ -20,10 +20,14 @@ export default function LanguagesComponent() {
     localStorage.setItem('languagePrefence', button.id);
   }
 
+  useEffect(() => {
+    document.querySelector(`#${language}`)?.classList.add('selected');
+  });
+
   return (
     <div className='languages-div'>
       <button
-        className='language-button selected'
+        className='language-button'
         id='pt-BR'
         onClick={(event) => {
           changeSelectedLanguage(event);
