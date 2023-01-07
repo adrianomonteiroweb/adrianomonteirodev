@@ -6,6 +6,7 @@ import secondaryData from '../../data/skillsData.json';
 
 import Card from './card-component/Card';
 import FilterSkills from './skills-components/FilterSkills';
+import ContactsComponent from '../../components/contacts/ContactsComponent';
 
 import './skills.css';
 
@@ -40,6 +41,7 @@ export default function Skills() {
             : 'logo-dark'
         }
       />
+      <ContactsComponent />
       <h2>{t('Junior Full Stack Software Developer')}</h2>
       <FilterSkills typeSkill={typeSkill} setTypeSkill={setTypeSkill} />
       <div className='cards-skills-div'>
