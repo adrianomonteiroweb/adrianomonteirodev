@@ -56,3 +56,14 @@ span {
     font-size: 14px;
   }
 }
+
+@media (max-width: 425px) {
+  .card {
+    height: 30px;
+  }
+
+  .card h3,
+  span {
+    font-size: 10px;
+  }
+}
