@@ -6,5 +6,17 @@
 .contacts-div .linkedin-icon,
 .contacts-div .whatsapp-icon,
 .contacts-div .gmail-icon {
+  border: 2px solid transparent;
   width: 35px;
+}
+
+.contacts-div .github-icon:hover,
+.contacts-div .linkedin-icon:hover,
+.contacts-div .whatsapp-icon:hover,
+.contacts-div .gmail-icon:hover {
+  border-bottom: 2px solid #9c9b9b;
+  bottom: 5px;
+  height: 35px;
+  position: relative;
+  width: 100%;
 }
