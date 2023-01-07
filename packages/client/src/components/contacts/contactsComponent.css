@@ -1,0 +1,10 @@
+.contacts-div {
+  display: flex;
+}
+
+.contacts-div .github-icon,
+.contacts-div .linkedin-icon,
+.contacts-div .whatsapp-icon,
+.contacts-div .gmail-icon {
+  width: 35px;
+}
