@@ -2,11 +2,19 @@
   border: 0;
   font-family: julius 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
+  border: 2px solid transparent;
+}
+
+.languages-div .language-button:hover {
+  border-bottom: 2px solid rgb(66, 61, 61);
+  bottom: 5px;
+  height: 35px;
+  position: relative;
 }
 
 .language-button.selected {
   font-family: bold;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #9c9b9b;
 }
 
 @media (max-width: 1440px) {
