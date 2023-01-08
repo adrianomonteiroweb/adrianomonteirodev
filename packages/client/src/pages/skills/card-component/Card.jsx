@@ -8,7 +8,9 @@ export default function Card({ skill, time_experience, type, at }) {
     <div className='card'>
       <div className='skill'>
         <h3>{skill}</h3>
-        <h3>{time_experience} meses</h3>
+        <h3>
+          {time_experience} {t('months')}
+        </h3>
       </div>
       <div className='tags'>
         <span className={`types ${type}`}>{t(type)}</span>
