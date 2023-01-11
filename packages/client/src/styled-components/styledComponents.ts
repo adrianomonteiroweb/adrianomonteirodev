@@ -49,4 +49,23 @@ export const Content = styled.div`
     border-bottom: 1px solid
       ${(props) => (props.theme.body === '#1a1a1a' ? '#1a1a1a' : '#e9ebf2')};
   }
+  .project-div {
+    background-color: ${(props) =>
+      props.theme.body === '#1a1a1a' ? '#1a1a1a' : '#e9ebf2'};
+  }
+  .content-div h4,
+  .content-div p,
+  .project-div .tags-div,
+  .project-div a {
+    color: ${(props) =>
+      props.theme.body === '#1a1a1a' ? '#e9ebf2' : '#1a1a1a'};
+  }
+  .project-div .status-div {
+    background-color: ${(props) =>
+      props.theme.body === '#1a1a1a' ? 'white' : '#696969'};
+  }
+  .project-div .status-span {
+    color: ${(props) =>
+      props.theme.body === '#1a1a1a' ? '#1a1a1a' : '#e9ebf2'};
+  }
 `;

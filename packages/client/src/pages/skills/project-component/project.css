@@ -1,0 +1,67 @@
+.project-div {
+  border-radius: 12px;
+  margin: 5px;
+  max-width: 170px;
+}
+
+.project-div:hover {
+  bottom: 6px;
+  position: relative;
+}
+
+.project-div .status-div {
+  background-color: aliceblue;
+  border-radius: 12px 12px 0 0;
+  height: 20px;
+  width: 100%;
+}
+
+.project-div .status-span {
+  border-radius: 4px;
+  color: black;
+  font-size: 12px;
+  margin: 2px;
+  padding: 3px;
+}
+
+.project-div .image-div {
+  min-height: 100px;
+}
+
+.image-div img {
+  width: 100%;
+}
+
+.content-div {
+  padding: 5px;
+}
+
+.project-div .tags-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tags-div span {
+  border: 1px solid gray;
+  border-radius: 10px;
+  font-size: 10px;
+  margin: 2px;
+  padding: 4px;
+}
+
+.project-div a {
+  font-size: 14px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.content-div button {
+  background-color: transparent;
+  border: 0;
+  color: aliceblue;
+}
+
+.disabled {
+  display: none;
+}

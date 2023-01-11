@@ -12,3 +12,6 @@ export default async function axiosFunction(
     throw new Error(error);
   }
 }
+
+export const statusProjectFunction = (index: number) =>
+  ['Coming soon', 'Under development'][index];
