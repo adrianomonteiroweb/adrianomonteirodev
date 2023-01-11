@@ -16,6 +16,13 @@
   margin-top: 20px;
 }
 
+.skills-div .cards-projects-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
 @media (max-width: 1440px) {
   .content {
     min-height: 600px;

@@ -1,0 +1,117 @@
+[
+  {
+    "title": "Invoices Dashboard",
+    "description": "Dashboard created in Vue.js to display invoices coming from an API in Node.js and Express.js.",
+    "uri": "https://github.com/adrianomonteiroweb/api-nodejs-sequelize-cashforce",
+    "repository": "https://github.com/adrianomonteiroweb/api-nodejs-sequelize-cashforce",
+    "image": "invoices_dashboard.jpg",
+    "tags": [
+      "Vue.js",
+      "Typescript",
+      "Node.js",
+      "Express.js",
+      "Sequelize",
+      "MariaDB"
+    ],
+    "status": 1
+  },
+  {
+    "title": "Project 02",
+    "description": "A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado",
+    "uri": "6",
+    "repository": "",
+    "image": "",
+    "tags": ["React.js", "TypeORM", "MongoDB"],
+    "status": 0
+  },
+  {
+    "title": "Project 03",
+    "description": "A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado",
+    "uri": "1",
+    "repository": "",
+    "image": "",
+    "tags": ["Next.js", "Redis"],
+    "status": 0
+  },
+  {
+    "title": "Project 04",
+    "description": "A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado",
+    "uri": "3",
+    "repository": "",
+    "image": "",
+    "tags": ["A", "B", "C"],
+    "status": 0
+  },
+  {
+    "title": "Project 05",
+    "description": "A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado",
+    "uri": "3",
+    "repository": "",
+    "image": "",
+    "tags": ["A", "B", "C"],
+    "status": 0
+  },
+  {
+    "title": "Project 06",
+    "description": "A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado",
+    "uri": "3",
+    "repository": "",
+    "image": "",
+    "tags": ["A", "B", "C"],
+    "status": 0
+  },
+  {
+    "title": "Project 07",
+    "description": "A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado",
+    "uri": "3",
+    "repository": "",
+    "image": "",
+    "tags": ["A", "B", "C"],
+    "status": 0
+  },
+  {
+    "title": "Project 08",
+    "description": "A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado",
+    "uri": "3",
+    "repository": "",
+    "image": "",
+    "tags": ["A", "B", "C"],
+    "status": 0
+  },
+  {
+    "title": "Project 09",
+    "description": "A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado",
+    "uri": "3",
+    "repository": "",
+    "image": "",
+    "tags": ["A", "B", "C"],
+    "status": 0
+  },
+  {
+    "title": "Project 10",
+    "description": "A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado",
+    "uri": " 3",
+    "repository": "",
+    "image": "",
+    "tags": ["A", "B", "C"],
+    "status": 0
+  },
+  {
+    "title": "Project 11",
+    "description": "A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado",
+    "uri": "3",
+    "repository": "",
+    "image": "",
+    "tags": ["A", "B", "C"],
+    "status": 0
+  },
+  {
+    "title": "Project 12",
+    "description": "A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado",
+    "uri": "3",
+    "repository": "",
+    "image": "",
+    "tags": ["A", "B", "C"],
+    "status": 0
+  }
+]

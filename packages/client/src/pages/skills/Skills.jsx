@@ -3,12 +3,14 @@ import { useTranslation } from 'react-i18next';
 
 import axiosFunction from '../../utils/functions';
 import secondaryData from '../../data/skillsData.json';
+import secondaryProjectData from '../../data/projectsData.json';
 
 import Card from './card-component/Card';
 import FilterSkills from './skills-components/FilterSkills';
 import ContactsComponent from '../../components/contacts/ContactsComponent';
 
 import './skills.css';
+import Project from './project-component/Project';
 
 export default function Skills() {
   const { t } = useTranslation();
@@ -56,6 +58,26 @@ export default function Skills() {
               at={at}
             />
           ))}
+      </div>
+      <div className='cards-projects-div'>
+        {secondaryProjectData.map(
+          (
+            { title, description, uri, repository, image, tags, status },
+            index
+          ) => (
+            <Project
+              key={index}
+              title={title}
+              description={description}
+              uri={uri}
+              repository={repository}
+              image={image}
+              tags={tags}
+              status={status}
+              index={index}
+            />
+          )
+        )}
       </div>
     </div>
   );
