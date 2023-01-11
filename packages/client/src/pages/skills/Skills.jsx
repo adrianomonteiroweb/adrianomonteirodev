@@ -33,14 +33,14 @@ export default function Skills() {
     <div className='skills-div'>
       <img
         src={
-          localStorage.getItem('themePreference') === 'Light'
-            ? 'logo-light.png'
-            : 'logo-dark.png'
+          localStorage.getItem('themePreference') === 'Dark'
+            ? 'logo-dark.png'
+            : 'logo-light.png'
         }
         alt={
-          localStorage.getItem('themePreference') === 'Light'
-            ? 'logo-light'
-            : 'logo-dark'
+          localStorage.getItem('themePreference') === 'Dark'
+            ? 'logo-dark'
+            : 'logo-light'
         }
       />
       <ContactsComponent />

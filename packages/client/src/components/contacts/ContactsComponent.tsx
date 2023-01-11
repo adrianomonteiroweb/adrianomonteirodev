@@ -7,9 +7,9 @@ export default function ContactsComponent() {
         <img
           className='github-icon'
           src={
-            localStorage.getItem('themePreference') === 'Light'
-              ? 'github-light.png'
-              : 'github-dark.png'
+            localStorage.getItem('themePreference') === 'Dark'
+              ? 'github-dark.png'
+              : 'github-light.png'
           }
           alt='Github'
         />
@@ -18,9 +18,9 @@ export default function ContactsComponent() {
         <img
           className='linkedin-icon'
           src={
-            localStorage.getItem('themePreference') === 'Light'
-              ? 'linkedin-light.png'
-              : 'linkedin-dark.png'
+            localStorage.getItem('themePreference') === 'Dark'
+              ? 'linkedin-dark.png'
+              : 'linkedin-light.png'
           }
           alt='LinkedIn'
         />
@@ -32,9 +32,9 @@ export default function ContactsComponent() {
         <img
           className='whatsapp-icon'
           src={
-            localStorage.getItem('themePreference') === 'Light'
-              ? 'whatsapp-light.png'
-              : 'whatsapp-dark.png'
+            localStorage.getItem('themePreference') === 'Dark'
+              ? 'whatsapp-dark.png'
+              : 'whatsapp-light.png'
           }
           alt='WhatsApp'
         />
@@ -43,9 +43,9 @@ export default function ContactsComponent() {
         <img
           className='gmail-icon'
           src={
-            localStorage.getItem('themePreference') === 'Light'
-              ? 'gmail-light.png'
-              : 'gmail-dark.png'
+            localStorage.getItem('themePreference') === 'Dark'
+              ? 'gmail-dark.png'
+              : 'gmail-light.png'
           }
           alt='Gmail'
         />
