@@ -35,17 +35,20 @@ export default function MenuComponent({ changeTheme, theme }: IProps) {
   return (
     <div className='menu'>
       <LanguagesComponent />
-      <button
-        className='button-selected'
-        type='button'
-        onClick={() => changeTheme()}
-      >
-        <img
-          id='theme-icon'
-          src={theme === 'Light' ? 'light-theme.png' : 'dark-theme.png'}
-          alt={theme === 'Light' ? 'light-theme' : 'dark-theme'}
-        />
-      </button>
+      <div className='theme-div'>
+        <button
+          className='button-selected'
+          type='button'
+          onClick={() => changeTheme()}
+        >
+          <img
+            id='theme-icon'
+            src={theme === 'Light' ? 'light-theme.png' : 'dark-theme.png'}
+            alt={theme === 'Light' ? 'light-theme' : 'dark-theme'}
+          />
+        </button>
+        <span>{theme === 'Light' ? 'Dark Theme' : 'Light Theme'}</span>
+      </div>
     </div>
   );
 }

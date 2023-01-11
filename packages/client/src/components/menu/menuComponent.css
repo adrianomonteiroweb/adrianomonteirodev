@@ -3,6 +3,15 @@
   display: flex;
 }
 
+.menu .theme-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.theme-div span {
+  font-size: 12px;
+}
+
 .menu button {
   background-color: transparent;
   border: 0;
