@@ -31,7 +31,7 @@ export default function Project({
   return (
     <div className='project-div'>
       <div className='status-div'>
-        <span className='status-span'>{statusProjectFunction(status)}</span>
+        <span className='status-span'>{t(statusProjectFunction(status))}</span>
       </div>
       <div className='image-div'>
         <img src={image} alt={title} />

@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+
 import LanguagesComponent from '../languages/LanguagesComponent';
 
 import './menuComponent.css';
@@ -22,6 +24,8 @@ function unhover(element: any, theme: string) {
 }
 
 export default function MenuComponent({ changeTheme, theme }: IProps) {
+  const { t } = useTranslation();
+
   const themeIcon = document.querySelector('#theme-icon');
 
   themeIcon?.addEventListener('mouseover', () => {
@@ -47,7 +51,7 @@ export default function MenuComponent({ changeTheme, theme }: IProps) {
             alt={theme === 'Light' ? 'light-theme' : 'dark-theme'}
           />
         </button>
-        <span>{theme === 'Light' ? 'Dark Theme' : 'Light Theme'}</span>
+        <span>{theme === 'Light' ? t('Dark Theme') : t('Light Theme')}</span>
       </div>
     </div>
   );

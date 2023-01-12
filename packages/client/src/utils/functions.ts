@@ -14,4 +14,4 @@ export default async function axiosFunction(
 }
 
 export const statusProjectFunction = (index: number) =>
-  ['Coming soon', 'Under development'][index];
+  ['Coming Soon', 'Under Development'][index];
