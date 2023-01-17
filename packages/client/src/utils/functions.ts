@@ -15,3 +15,18 @@ export default async function axiosFunction(
 
 export const statusProjectFunction = (index: number) =>
   ['Coming Soon', 'Under Development'][index];
+
+export function filterProjectsBySkills(
+  projects: Array<any>,
+  arrayOfStrings: Array<string>
+) {
+  const isFilter = projects.filter((project) => {
+    const src = arrayOfStrings.map((skill) =>
+      project.tags.includes(skill.toLowerCase())
+    );
+
+    return src.includes(true) && true;
+  });
+
+  return isFilter.length > 0 ? isFilter : projects;
+}

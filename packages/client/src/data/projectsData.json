@@ -6,12 +6,12 @@
     "repository": "https://github.com/adrianomonteiroweb/api-nodejs-sequelize-cashforce",
     "image": "invoices_dashboard.jpg",
     "tags": [
-      "Vue.js",
-      "Typescript",
-      "Node.js",
-      "Express.js",
-      "Sequelize",
-      "MariaDB"
+      "vuejs",
+      "typescript",
+      "nodejs",
+      "expressjs",
+      "sequelize",
+      "mariadB"
     ],
     "status": 1
   },
@@ -21,7 +21,7 @@
     "uri": "6",
     "repository": "",
     "image": "",
-    "tags": ["React.js", "TypeORM", "MongoDB"],
+    "tags": ["reactjs", "typeorm", "mongodb"],
     "status": 0
   },
   {
@@ -30,7 +30,7 @@
     "uri": "1",
     "repository": "",
     "image": "",
-    "tags": ["Next.js", "Redis"],
+    "tags": ["nextjs", "redis"],
     "status": 0
   },
   {
@@ -39,7 +39,7 @@
     "uri": "3",
     "repository": "",
     "image": "",
-    "tags": ["A", "B", "C"],
+    "tags": ["javascript", "nodejs", "C"],
     "status": 0
   },
   {

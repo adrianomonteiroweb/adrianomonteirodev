@@ -23,6 +23,31 @@
   width: 100%;
 }
 
+.filter-projects-div .filter-skills-div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+  max-width: 100%;
+  padding: 1px;
+}
+
+.filter-skills-div .skill {
+  background-color: cadetblue;
+  border-radius: 12px;
+  margin: 8px;
+  padding: 3px;
+}
+
+.skill .delete {
+  background-image: url('../../../public/x.png');
+  background-size: 100%;
+  height: 13px;
+  width: 13px;
+  position: relative;
+  left: 100%;
+  top: -100%;
+}
+
 @media (max-width: 1440px) {
   .content {
     min-height: 600px;
