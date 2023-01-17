@@ -94,7 +94,7 @@ export default function Skills() {
         ))}
       </div>
       <div className='filter-projects-div'>
-        <p>{t('Enter a skill to filter and press "Enter"')}</p>
+        <p>{t("Enter a skill to filter and press 'Enter'")}</p>
         <input
           id='filter-input'
           type='text'
