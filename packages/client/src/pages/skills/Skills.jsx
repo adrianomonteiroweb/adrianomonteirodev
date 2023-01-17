@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import axiosFunction from '../../utils/functions';
+import axiosFunction, { filterProjectsBySkills } from '../../utils/functions';
 import secondaryData from '../../data/skillsData.json';
 import secondaryProjectData from '../../data/projectsData.json';
 
@@ -16,6 +16,8 @@ export default function Skills() {
   const { t } = useTranslation();
   const [typeSkill, setTypeSkill] = useState('All Skills');
   const [skillsData, setSkillsData] = useState([]);
+  const [projects, setProjects] = useState(secondaryProjectData);
+  const [filterProjects, setFilterProjects] = useState(['']);
 
   async function fetch() {
     const fetchResult = await axiosFunction('skills');
@@ -23,11 +25,45 @@ export default function Skills() {
     setSkillsData(fetchResult);
   }
 
+  function addTagsSkills(e) {
+    if (e.keyCode !== 13) return;
+
+    const valueInput = document.querySelector('#filter-input').value;
+
+    const spanSkill = document.createElement('span');
+    spanSkill.className = 'skill';
+    spanSkill.innerText = valueInput;
+    spanSkill.id = valueInput;
+
+    document.querySelector('.filter-skills-div').appendChild(spanSkill);
+
+    const deleteDiv = document.createElement('div');
+    deleteDiv.className = 'delete';
+    deleteDiv.addEventListener('click', (e) => {
+      document.querySelector(`#${e.target.parentNode.id}`).remove();
+      setFilterProjects([
+        ...filterProjects.filter(
+          (project) => project !== e.target.parentNode.id
+        ),
+      ]);
+    });
+
+    document.querySelector(`#${valueInput}`).appendChild(deleteDiv);
+
+    document.querySelector('#filter-input').value = '';
+
+    setFilterProjects([...filterProjects, valueInput]);
+  }
+
   useEffect(() => {
     fetch();
 
     skillsData.length === 0 && setSkillsData(secondaryData);
-  });
+  }, []);
+
+  useEffect(() => {
+    setProjects(filterProjectsBySkills(secondaryProjectData, filterProjects));
+  }, [filterProjects]);
 
   return (
     <div className='skills-div'>
@@ -47,20 +83,28 @@ export default function Skills() {
       <h2>{t('Junior Full Stack Software Developer')}</h2>
       <FilterSkills typeSkill={typeSkill} setTypeSkill={setTypeSkill} />
       <div className='cards-skills-div'>
-        {skillsData
-          .filter(({ type }) => type !== typeSkill)
-          .map(({ skill, time_experience, type, at }, index) => (
-            <Card
-              key={index}
-              skill={skill}
-              time_experience={time_experience}
-              type={type}
-              at={at}
-            />
-          ))}
+        {skillsData.map(({ skill, time_experience, type, at }, index) => (
+          <Card
+            key={index}
+            skill={skill}
+            time_experience={time_experience}
+            type={type}
+            at={at}
+          />
+        ))}
+      </div>
+      <div className='filter-projects-div'>
+        <p>{t('Enter a skill to filter and press "Enter"')}</p>
+        <input
+          id='filter-input'
+          type='text'
+          placeholder='Add Skill for Filter'
+          onKeyUp={(e) => addTagsSkills(e)}
+        />
+        <div className='filter-skills-div'></div>
       </div>
       <div className='cards-projects-div'>
-        {secondaryProjectData.map(
+        {projects.map(
           (
             { title, description, uri, repository, image, tags, status },
             index
