@@ -1,17 +1,17 @@
 [
   {
-    "title": "Invoices Dashboard",
-    "description": "Dashboard created in Vue.js to display invoices coming from an API in Node.js and Express.js.",
-    "uri": "https://github.com/adrianomonteiroweb/api-nodejs-sequelize-cashforce",
-    "repository": "https://github.com/adrianomonteiroweb/api-nodejs-sequelize-cashforce",
-    "image": "invoices_dashboard.jpg",
+    "title": "Sistema LAAC - UFC de controle clínico de qualidade",
+    "description": "Sistema de analise de controle de qualidade clínica, utilizando-se das regras de Westgard.",
+    "uri": "https://laac-controle-de-qualidade-westgard.vercel.app/",
+    "repository": "https://github.com/adrianomonteiroweb/westgard-system",
+    "image": "laac_ufc.jpeg",
     "tags": [
-      "vuejs",
-      "typescript",
-      "nodejs",
-      "expressjs",
-      "sequelize",
-      "mariadB"
+      "reactjs",
+      "bootstrap",
+      "reactbootstrap",
+      "reactgooglecharts",
+      "reactrouterdom",
+      "reacticons"
     ],
     "status": 1
   },
