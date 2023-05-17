@@ -31,15 +31,15 @@ span {
 }
 
 .types.Academic {
-  background-color: darkgreen;
+  background-color: rgba(9, 170, 9, 0.767);
 }
 
 .types.Professional {
-  background-color: midnightblue;
+  background-color: rgba(35, 35, 165, 0.815);
 }
 
 .tags .at {
-  background-color: dimgray;
+  background-color: rgba(105, 105, 105, 0.829);
   border-radius: 4px;
   color: aliceblue;
   margin: 2px;
@@ -64,6 +64,6 @@ span {
 
   .card h3,
   span {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
