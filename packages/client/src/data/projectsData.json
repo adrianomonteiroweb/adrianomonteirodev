@@ -16,13 +16,20 @@
     "status": 1
   },
   {
-    "title": "Project 02",
-    "description": "A expressão Lorem ipsum em design gráfico e editoração é um texto padrão em latim utilizado",
-    "uri": "6",
-    "repository": "",
-    "image": "",
-    "tags": ["reactjs", "typeorm", "mongodb"],
-    "status": 0
+    "title": "RPG Master",
+    "description": "Sistema de administração de campanhas de RPG",
+    "uri": "https://rpgmaster.vercel.app/",
+    "repository": "https://github.com/adrianomonteiroweb/rpg-master",
+    "image": "rpgmaster.jpeg",
+    "tags": [
+      "reactjs",
+      "express",
+      "typescript",
+      "mongoose",
+      "reactbootstrap",
+      "reactrouterdom"
+    ],
+    "status": 1
   },
   {
     "title": "Project 03",
